@@ -145,80 +145,84 @@ a:hover .ex-12-bottom-white{
 }
 
 /* Esercizio 13 */
+.ex-13-top-white,.ex-13-bottom-white{
+    /* border: solid 1px black; */
+    border-radius: 5%;
+}
 a:hover .ex-13-top-white{
-    animation: 4s topWhiteAround;
+    animation: 4s topWhiteAround ease-in-out;
 }
 a:hover .ex-13-bottom-white{
-    animation: 4s bottomWhiteAround;
+    animation: 4s bottomWhiteAround ease-in-out;
 }
 @keyframes topWhiteAround{
     0%{
+        border-radius: 5%;
+        width: 60px;
         top: -10px;
         left: 10%;
     }
     20%{
-        top: -10px;
-        left: calc(100% - 50px)
-    }
-    /* 21%{
+        border-radius: 50%;
         width: 20px;
         top: -10px;
-        left: calc(100% - 5px)        
-    } */
-    /* 44%{
-        width: 60px;
-        top: calc(100% - 30px);
-        left: calc(100% - 5px)
-    } */
+        left: calc(100% - 10px)
+    }
     45%{
+        width: 20px;
         top: calc(100% - 10px);
-        left: calc(100% - 50px)
+        left: calc(100% - 10px)
     }
     70%{
+        width: 20px;
         top: calc(100% - 10px);
         left: -10px;        
     }
-    95%{
+    85%{
+        border-radius: 50%;
+        width: 20px;
         top: -10px;
         left: -10px;
     }
     100%{
+        border-radius: 5%;
+        width: 60px;
         top: -10px;
         left: 10%;
     }
 }
 @keyframes bottomWhiteAround{
     0%{
+        border-radius: 5%;
+        width: 60px;
         bottom: -10px;
         right: 20%;
     }
     20%{
-        bottom: -10px;
-        right: calc(100% - 50px)
-    }
-    /* 21%{
+        border-radius: 50%;
         width: 20px;
         bottom: -10px;
-        right: calc(100% - 5px)        
-    } */
-    /* 44%{
-        width: 60px;
-        bottom: calc(100% - 30px);
-        right: calc(100% - 5px)
-    } */
+        right: calc(100% - 10px)
+    }
     45%{
+        width: 20px;
         bottom: calc(100% - 10px);
-        right: calc(100% - 50px)
+        right: calc(100% - 10px)
     }
     70%{
+        width: 20px;
         bottom: calc(100% - 10px);
         right: -10px;        
     }
-    95%{
+    85%{
+        border-radius: 50%;
+        width: 20px;
         bottom: -10px;
         right: -10px;
     }
     100%{
+        border-radius: 5%;
+        width: 60px;
         bottom: -10px;
         right: 20%;
     }
