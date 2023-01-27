@@ -91,11 +91,8 @@
 /* Esercizio 11 */
 .ex-11-icon{
     position: relative;
-}
-.ex-11-icon:hover{
     animation: 3s infInterruptedRotation infinite linear;
 }
-
 @keyframes infInterruptedRotation{
     0%{
         transform: rotate(0deg);
