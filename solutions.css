@@ -64,19 +64,18 @@
 
 /* Esercizio 9 */
 .ex-9-img {
-    transition: transform 3s ease-in-out 1s, border-radius 1s;
+    transition: transform 3s, border-radius 1s;
 }
 .ex-9-img:hover {
     border-radius: 10px;
-    transform: scale(1.25, 1.25);
-    transform-origin: right;
+    transform: scale(1.2, 1.2); 
 }
 
 /* Esercizio 10 */
 .ex-10-icon{
     position: relative;
 }
-.ex-10-icon:hover{
+.ex-10-icon{
     animation: 3s infRotation infinite linear;
 }
 @keyframes infRotation{
@@ -91,6 +90,8 @@
 /* Esercizio 11 */
 .ex-11-icon{
     position: relative;
+}
+.ex-11-icon:hover{
     animation: 3s infInterruptedRotation infinite linear;
 }
 @keyframes infInterruptedRotation{
@@ -147,10 +148,10 @@ a:hover .ex-12-bottom-white{
     border-radius: 5%;
 }
 a:hover .ex-13-top-white{
-    animation: 4s topWhiteAround ease-in-out;
+    animation: 2s topWhiteAround linear;
 }
 a:hover .ex-13-bottom-white{
-    animation: 4s bottomWhiteAround ease-in-out;
+    animation: 2s bottomWhiteAround linear;
 }
 @keyframes topWhiteAround{
     0%{
